@@ -10,8 +10,8 @@ const DrawerNavigator = () => {
   return (
 
     <Navigator >
-      <Screen name="HomeNavigator" component={HomeNavigator} />
-      <Screen name="AboutNavigator" component={AboutNavigator} />
+      <Screen name="Home" component={HomeNavigator} />
+      <Screen name="About" component={AboutNavigator} />
     </Navigator>
 
 

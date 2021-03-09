@@ -3,12 +3,12 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from '../screens/home';
 import ReviewDetails from '../screens/reviewDetails';
 
-const {Navigator , Screen } = createStackNavigator();
+const { Navigator, Screen } = createStackNavigator();
 
-const  HomeNavigator=()=>(
+const HomeNavigator = () => (
 
-        // screen options to provide global headerstyle  isliye yha declare kiya hai//
-            <Navigator   screenOptions={{
+    // screen options to provide global headerstyle  isliye yha declare kiya hai//
+    <Navigator screenOptions={{
         headerStyle: {
             backgroundColor: '#f4511e',
         },
@@ -17,20 +17,21 @@ const  HomeNavigator=()=>(
             fontWeight: 'bold',
         },
     }}>
-        
-        <Screen 
-        name="Home" 
-        component={Home}
-        options={{title:'Web Series'}}
+
+        <Screen
+            name="Home"
+            component={Home}
+            options={{ title: 'Web Series' }}
+
         />
-        <Screen 
-        name="ReviewDetails" 
-        component={ReviewDetails}
-        options={{title:'Review Details'}}
+        <Screen
+            name="ReviewDetails"
+            component={ReviewDetails}
+            options={{ title: 'Review Details' }}
         />
-            
-        </Navigator>
-    
+
+    </Navigator>
+
 );
 export default HomeNavigator;
 
